@@ -1,4 +1,5 @@
-package pe.edu.cibertec.Proyecto_DAW_Final.Entity;
+package pe.edu.cibertec.Proyecto_DAW_Final.entity;
+
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -12,25 +13,27 @@ import lombok.Setter;
 import lombok.ToString;
 
 @Entity
-@Table(name = "tb_bocadito")
+@Table(name = "tb_torta")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class BocaditoEntity {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idboca;
+public class TortaEntity {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long idtorta;
     
-    private String nombre_boca;
+    private String nombre;
     
-    private String descripcion_boca;
+    private String descripcion;
     
-    private Integer stock_boca;
+    private Integer stock;
     
-    private Double precio_boca;
+    private double precio;
     
     private String urlImagen;
+
 }
+

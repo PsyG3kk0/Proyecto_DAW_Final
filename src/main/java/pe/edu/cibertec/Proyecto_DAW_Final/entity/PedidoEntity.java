@@ -1,4 +1,4 @@
-package pe.edu.cibertec.Proyecto_DAW_Final.Entity;
+package pe.edu.cibertec.Proyecto_DAW_Final.entity;
 
 import java.time.LocalDate;
 import java.util.List;
