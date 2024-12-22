@@ -1,6 +1,5 @@
 package pe.edu.cibertec.Proyecto_DAW_Final.Entity;
 
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -13,27 +12,17 @@ import lombok.Setter;
 import lombok.ToString;
 
 @Entity
-@Table(name = "tb_torta")
+@Table(name = "tb_tipo")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class TortaEntity {
-	
+public class TipoEntity {
+
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idtorta;
-    
-    private String nombre;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer idtipo;
     
     private String descripcion;
-    
-    private Integer stock;
-    
-    private double precio;
-    
-    private String urlImagen;
-
 }
-
